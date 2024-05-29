@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1> 
+            Program on various Database
+        </h1>
+    </head>
+    <body>
+        <script>
+        //Write to session storage
+        sessionStorage.setItem('name', "ronin");
+        
+        //read from session storage
+        let name = sessionStorage.getItem('name');
+        console.log(name);
+        
+        //Write to local storage
+        localStorage.setItem('name', "ronin");
+//read from local storage
+name = localStorage.getItem('name');
+        console.log(name);
+        
+        //write to cookie
+        document.cookie = "hello world";
+        
+        //read from cookie
+        console.log(document.cookie);
+        
+        //initializing a websql database
+        let db = openDatabase('testDatabase', '1.0', 'LabExperiment', 2 * 1024 * 1024);
+        
+        //creating a table in websql
+        db.transaction(function (e) { 
+        e.executeSql('CREATE TABLE IF NOT EXISTS STUDENT (firstName , lastName)'); 
+        });
+        
+        //writing data into table in websql
+        db.transaction(function (e) { 
+        e.executeSql('INSERT INTO STUDENT (firstName, lastName) VALUES ("Ravi", "Prakash")'); 
+        e.executeSql('INSERT INTO STUDENT (firstName, lastName) VALUES ("Srinu", "Potnuru")'); 
+        }); 
+        
+        //reading data from table in websql
+        db.transaction(function (e) { 
+        e.executeSql('SELECT * FROM STUDENT', [], function (e, result) { 
+        console.log(result.rows); 
+        }, null); 
+        });
+        </script>
+       </body> 
+</html>

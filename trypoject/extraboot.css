@@ -1,0 +1,10 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.row{
+    align-items: flex-end;
+}
+body{
+    background-color: black;
+}

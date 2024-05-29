@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+
+    <form id="registrationForm">
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" name="newUsername" required>
+        <br>
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" required>
+        <br>
+        <button type="button" onclick="validateRegistrationForm()">Register</button>
+    </form>
+
+    <button onclick="goToLogin()">Go to Login</button>
+
+    <script>
+        function validateRegistrationForm() {
+            const newUsername = document.getElementById('newUsername').value;
+            const newPassword = document.getElementById('newPassword').value;
+
+            // Simple validation with regular expressions
+            if (!/^[a-zA-Z0-9]+$/.test(newUsername) || !/^[a-zA-Z0-9]+$/.test(newPassword)) {
+                alert('Invalid username or password format. Use only alphanumeric characters.');
+            } else {
+                alert('Registration successful!');
+            }
+        }
+
+        function goToLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+
+</body>
+</html>

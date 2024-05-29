@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+            /* padding-left: 4.9rem; */
+        }
+        .container {
+            margin-left: 8rem;
+            margin-right: 8rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .card {
+            display: flex;
+            border: 1px solid #b2ada2;
+            background-color: darkgrey;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 5px;
+            position: relative; 
+        }
+        .card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .card .content {
+            flex: 1;
+        }
+        .card .appointment-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: block;
+            background-color: #050d16;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+            .card {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .card img {
+                margin: 0 auto 10px;
+            }
+            .card .appointment-button {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>DOCTORS</h1>
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_640.jpg" alt="Image 1">
+            <div class="content">
+                <h2>Name: Dr.XYZ</h2>
+                <h2>Address: Idk, Vizag, India</h2>
+                <p>Description about the card content goes here.</p>
+                <button class="appointment-button">Make an Appointment</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_640.jpg" alt="Image 2">
+            <div class="content">
+                <h2>Name: Dr.XYZ</h2>
+                <h2>Address: Idk, Vizag, India</h2>
+                <p>Description about the card content goes here.</p>
+                <button class="appointment-button">Make an Appointment</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2014/12/10/20/56/medical-563427_640.jpg" alt="Image 3">
+            <div class="content">
+                <h2>Name: Dr.XYZ</h2>
+                <h2>Address: Idk, Vizag, India</h2>
+                <p>Description about the card content goes here.</p>
+                <button class="appointment-button">Make an Appointment</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
