@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes with Images and Titles</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .box {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        background-color: cornsilk;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .box:hover {
+        box-shadow: 15px 15px 15px 0px rgba(13, 2, 2, 0.3);
+      }
+      .box img {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        display: block;
+      }
+      .box .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      .box .description {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .button {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <br><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://m.economictimes.com/thumb/msid-93311573,width-1200,height-900,resizemode-4,imgsize-47016/online-schooling.jpg" class="img-fluid">
+            <div class="title">Schooling</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+            <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-outline-primary button">View Tutorial</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-51524,resizemode-1,msid-87848742/small-biz/sme-sector/specialized-higher-education-is-bridging-the-gap-between-industry-requirements-and-formal-education.jpg" class="img-fluid">
+            <div class="title">Intermediate</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+            <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-primary button">View Tutorial</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://images.theconversation.com/files/151920/original/image-20170106-18641-uam2in.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" class="img-fluid">
+            <div class="title">Engineering</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+            <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-primary button">View Tutorial</button></a>
+          </div>
+        </div>
+     <div>
+  </body> 
+  </html>

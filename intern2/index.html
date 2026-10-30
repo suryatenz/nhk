@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        p {
+            color: black;
+        }
+
+        .card {
+            background-color: yellow;
+        }
+
+        h2,
+        h1 {
+            color: yellow;
+        }
+        header{
+            position:fixed;
+            z-index: 2;
+            width: 100%;
+        }
+         .card-hover{
+            transition: 0.3s ease;
+        }
+        .card:hover{
+            transform: scale(1.04);
+            box-shadow: 0px 0px 1px 3px yellow;
+        } 
+        .nav-item>a{
+            transition: 0.2s ease;
+        }
+        .nav-item>a:hover{
+            transform: scale(1.15);
+        }
+        .container>a{
+            transition: 0.2 ease;
+        }
+        .container>a:hover{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="color: yellow;">My Landing Page</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#gg" style="color: yellow;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hello" style="color: yellow;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hi-oo" style="color: yellow;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bye" style="color: yellow;" >Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <div class="main">
+        <div class="jumbotron" style="background-color: black;" id="gg">
+            <div class="container" style="background-color: black;">
+                <h1 class="display-4">Welcome to Landing Page</h1>
+                <p class="lead">This is a landing page created using HTML, CSS, Bootstrap</p>
+                <a class="btn btn-outline-warning btn-lg" href="#" role="button">Learn more</a>
+            </div>
+        </div>
+    </div>   
+    <!-- <main> -->
+        <div class="services">
+        <section class="services" id="hi-oo">
+            <div class="container">
+                <h2>Our Services</h2>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://www.hallme.com/uploads/javascript-functions-350x200.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 1</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque malesuada quam id urna dignissim blandit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/022/717/962/small/cloud-technology-computing-devices-connected-to-digital-storage-in-the-data-center-via-the-internet-iot-smart-home-communication-laptop-tablet-phone-devices-businessman-using-technology-generated-ai-photo.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 2</h5>
+                                <p class="card-text">Lorem ipsum dolorsit amet, consectetur adipiscing elit.
+                                    Pellentesque malesuada quam id urna dignissim blandit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="https://www.techaxis.com.np/uploads/blog_image/4013b49d97a678db35f5f36e1c64ae50.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Service 3</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Pellentesque malesuada quam id urna dignissim blandit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> 
+        <br>
+        <br>
+        <div class="aboutus">
+        <section class="about" id="hello">
+            <div class="container">
+                <h2>About Us</h2>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://media.licdn.com/dms/image/D5612AQG_UJn7UEMxbQ/article-cover_image-shrink_720_1280/0/1677595429371?e=2147483647&v=beta&t=Jpk7D16xtIoOFlinT2rJWDM5svFRp3eAMo8iUhNkVos" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <p style="color: yellow;">We Develop Personalized Software At Our Company, We Turn The Digital Dreams Of Our Clients Into A Reality.
+                             We Work Closely With Our Users Throughout Development To Ensure That We Are Still Aligned With The End-Goal.
+                             We Are Committed To Producing Exceptional Software For Each Of Our Clients.
+                           </p>
+                        <p style="color: yellow;"> We At OASIS InfoByte Believe In Making Our Youth Especially The Students Self-Aware And Exploring The Untouched World Of Technology And Tremendous Growth-Making Fields. 
+                            We Believes In Bridging The Gap Between Students And Their Knowledge In The Industrial Field & Bringing Them A Step Closer To Their Dream. 
+                            We Are MSME Registered Start-Up, Always Open To Connect New People With Us Over This Journey Of Endless Learning And Great Joy!.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>   
+        <br>
+        <section class="contact" id="bye">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <br>
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="color: yellow;">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color: yellow;">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            placeholder="Enter email" style="color: azure;">
+                        <small id="emailHelp" class="form-text" style="color: yellow;">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" style="color: yellow;">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-outline-warning">Submit</button>
+                </form>
+            </div>
+        </section>
+    <!-- </main> -->
+    <br>
+    <hr style="background-color: yellow; height: .5rem;">
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p style="color: yellow;">© 2023 My Landing Page. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93h" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      #hero {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 105%;
+    max-width: 100%; 
+    margin: 0; 
+    top: 20%;
+    left: -1%;
+}
+.image {
+    display: block;
+    left: 0%;
+    top: 2%;
+    opacity: 0.4;
+    width: 101.8%;
+    height: 400px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+.text {
+    position: absolute;
+    top: 80%;
+    left: 59%;
+    transform: translate(-50%, -50%);
+    color: #000000; 
+    font-size: 2rem; 
+    font-weight: bold;
+    width: 100%;
+    max-width: 600px;
+}
+.quote{
+    position:absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; 
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 550px;
+}
+.logo{
+    position: absolute;
+    top: 21%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 2rem; 
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+    max-width: 800px;
+     
+    opacity: 1; 
+}
+/* Explore section */
+.Explore{
+padding: 40px 0;
+text-align: center;
+transition:0.5s;
+position:relative;
+}
+.box {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        background-color: cornsilk;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      .box:hover {
+        box-shadow: 15px 15px 15px 0px rgba(13, 2, 2, 0.3);
+      }
+      .box img {
+        position: relative;
+        width: 100%;
+        height: 10%;
+        display: block;
+      }
+      .box .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        margin-top: 10px;
+      }
+      .box .description {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+      .button {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+/* Teachers */
+.teachers {
+padding: 40px 0;
+text-align: center;
+transition:0.5s;
+position:relative;
+}
+.teachers:hover{
+background:var(--clr);
+box-shadow:0 0 35px var(--clr);
+}
+
+.border {
+width: 160px;
+height: 5px;
+background: #f2be55;
+margin: 26px auto;
+}
+
+.teacher {
+
+margin: 10px;
+margin-bottom: 50px;
+width: 350px;
+height: 300px;
+padding: 20px;
+line-height: 20px;
+transition: all .2s ease-in-out;
+}
+
+
+.teacher:hover {
+transform: scale(1.02);
+}
+/* Review */
+.testimonials {
+padding: 40px 0;
+}
+
+
+
+.border {
+width: 160px;
+height: 5px;
+background: #6ab04c;
+margin: 26px auto;
+}
+
+.testimonial {
+background: #dbf6f8;
+margin: 10px;
+margin-bottom: 50px;
+width: 400px;
+height: 250px;
+padding: 20px;
+line-height: 20px;
+transition: all .2s ease-in-out;
+}
+
+.testimonial>svg {
+width: 300px;
+height: 300px;
+flex-grow: 1;
+border-radius: 50%;
+margin-top: -110px;
+}
+
+.testimonial_right{
+margin-left: 20px;
+margin-top: 15px;
+}
+
+.testimonial_description {
+margin-top: 21px;
+
+}
+
+.testimonial_name {
+margin-left:0px;
+margin-top: -1px;
+}
+
+.testimonial:hover {
+transform: scale(1.02);}
+    </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Mentoring</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width:99%"">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">EDUMOON</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Features</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Pricing</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Dropdown link
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Action</a></li>
+				  <li><a class="dropdown-item" href="#">Another action</a></li>
+				  <li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	
+	<section class="hero">
+	<div class="container" id="hero">
+		<img class="image" src="https://junipereducation.org/wp-content/uploads/2022/06/teacher-using-different-teaching-methods-featured.jpg" alt="Example Image">
+		
+		<p class="quote ali">A good teacher can change everything</p>
+    <img src="https://theneuronstore.com/wp-content/uploads/2023/02/Artboard-1.png" class="logo">
+		<div class="text">
+			
+			
+			<nav class="navbar">
+				<div class="container-fluid">
+				  <form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-success" type="submit">Search</button>
+				  </form>
+				</div>
+			  </nav>
+		</div>
+    
+		
+	</div>
+	</section>
+ <div class="Explore">
+    <center> <h1 style="color:#f90695">Explore Us</h1></center>
+    <div class="border"></div>
+    <div class="container">
+        <br><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://m.economictimes.com/thumb/msid-93311573,width-1200,height-900,resizemode-4,imgsize-47016/online-schooling.jpg" class="img-fluid">
+            <div class="title">Schooling</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+            <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-primary button">View Tutorial</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-51524,resizemode-1,msid-87848742/small-biz/sme-sector/specialized-higher-education-is-bridging-the-gap-between-industry-requirements-and-formal-education.jpg" class="img-fluid">
+            <div class="title">Intermediate</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+            <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-primary button">View Tutorial</button></a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="box">
+            <img src="https://images.theconversation.com/files/151920/original/image-20170106-18641-uam2in.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" class="img-fluid">
+            <div class="title">Engineering</div>
+            <div class="description">Click The Above Button For Demo Video</div>
+           <a href="https://youtu.be/L941re_Qu9A"><button type="button" class="btn btn-primary button justify-content-center">View Tutorial</button></a>
+          </div>
+        </div>
+     <div>
+    
+    <div class="teachers">
+
+                
+    
+        <center> <h1 style="color:#f90695">Meet Our Pro Mentors</h1></center>
+            <div class="border"></div>
+            <div class="teachers_row d-flex justify-content-center flex-wrap reveal" style="--clr:blue">
+                <div class="teacher d-flex flex-row flex-wrap" >
+                    <div class="teacher_header d-flex flex-column justify-content-center">
+    
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/5Kv3M234_x8">
+                        </iframe>
+                    </div>
+                    <div class="teacher_body py-3">
+                        <div class="teacher_name"> 
+                            <u><h2 style="color:#fb6b04">Shoukath Ali</h2> </u> 
+                            B.tech in CSE from Andhra University<br>
+                            Master in C++<br>
+                            ⭐⭐⭐⭐⭐(55 reviews) </div>
+                    </div>
+                </div>
+                <div class="teacher d-flex flex-row flex-wrap">
+                    <div class="teacher_header d-flex flex-column justify-content-center">
+    
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/emQUnHEiXfQ">
+                        </iframe>
+                    </div>
+                    <div class="teacher_body py-3">
+                        <div class="teacher_name">
+                            <u><h2 style="color:#fb6b04">Sohana</h2></u>
+                            B.tech in CSE from Andhra University<br>
+                            Pioneer in Digital Logic Design<br>
+                            ⭐⭐⭐⭐(35 reviews)</div>
+                    </div>
+                </div>
+                <div class="teacher d-flex flex-row flex-wrap">
+                    <div class="teacher_header d-flex flex-column justify-content-center">
+    
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/OdWunYgH_cY">
+                        </iframe>
+                    </div>
+                    <div class="teacher_body py-3">
+                        <div class="teacher_name"> 
+                            <u><h2 style="color:#fb6b04">Samuel Susan</h2></u>
+                             B.tech in CSE from Andhra University<br>
+                            Skilled in FLAT<br>
+                            ⭐⭐⭐⭐(40 reviews) </div>
+                    </div>
+                </div>
+            </div>
+    
+    </div>
+    <div class="testimonials">
+
+        <center><h1 style=color:#f90695>Reviews</h1></center>
+        <div class="border"></div>
+        <div class="testimonials_row d-flex justify-content-center flex-wrap reveal">
+
+            <div class="testimonial d-flex">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle align-self-start" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+
+
+                <div class="testimonial_right d-flex flex-column justify-content-start">
+                    <div class="testimonial_name">P.Suresh</div>
+                    <div class="testimonial_stars">⭐⭐⭐⭐</div>
+                    <div class="testimonial_course">Completed C++ course</div>
+                    <p class="testimonial_description">
+                        I ve been part of the community for one year and the way you all arrange skilloriented
+                        seminars and amazing events is amazing. Learned many skills and got exposure to the outer
+                        world."
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="testimonial d-flex">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle align-self-start" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+
+
+                <div class="testimonial_right d-flex flex-column justify-content-start">
+                    <div class="testimonial_name">P.Suresh</div>
+                    <div class="testimonial_stars">⭐⭐⭐⭐</div>
+                    <div class="testimonial_course">Completed C++ course</div>
+                    <p class="testimonial_description">
+                        I ve been part of the community for one year and the way you all arrange skilloriented
+                        seminars and amazing events is amazing. Learned many skills and got exposure to the outer
+                        world.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="testimonial d-flex">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle align-self-start" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg>
+
+
+                <div class="testimonial_right d-flex flex-column justify-content-start">
+                    <div class="testimonial_name">P.Suresh</div>
+                    <div class="testimonial_stars">⭐⭐⭐⭐</div>
+                    <div class="testimonial_course">Completed C++ course</div>
+                    <p class="testimonial_description">
+                        /* "I 've been part of the community for one year and the way you all arrange skilloriented */
+                        seminars and amazing events is amazing. Learned many skills and got exposure to the outer
+                        world.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
